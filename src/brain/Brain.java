@@ -8,7 +8,9 @@ public class Brain {
 		String input = com.nextLine();
 
 		if(input.equals("Hello")) {
-			System.out.println("Hello Master");
+			System.out.println("Hello");
 		}
 	}
+
+	public void 
 }
