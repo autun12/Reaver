@@ -23,7 +23,7 @@ public class Main implements Runnable {
 	public void run() {
 		while(!Thread.interrupted()) {
 			Brain brain = new Brain();
-			brain.Brain();
+			brain.Response();
 		}
 		stop();
 	}
