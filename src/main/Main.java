@@ -1,6 +1,9 @@
 package src.main;
 
+import java.io.FileNotFoundException;
+
 import src.brain.Brain;
+import src.brain.Learning;
 
 public class Main implements Runnable {
 	public Thread thread;
@@ -31,6 +34,5 @@ public class Main implements Runnable {
 	public static void main(String[] args) {
 		Main reaver = new Main();
 		reaver.start();
-		//System.out.println("Running thread...");
 	}
 }
