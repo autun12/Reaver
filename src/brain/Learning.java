@@ -7,19 +7,30 @@ import java.io.FileReader;
 import java.io.File;
 import java.io.IOException;
 
+import java.util.Scanner;
+
 import src.brain.Brain;
 
 public class Learning {
 
-    Brain brain = new Brain();
+//    Brain brain = new Brain();
 
     BufferedReader br;
-    String action = brain.input;
-    int numbers;
+    //String action = brain.input;
+
+    Scanner algorithm = new Scanner(System.in);
+    double numbers = algorithm.nextDouble();
+
+    public double x = numbers;
+    public double y = numbers;
+
+    public double sum;
+    public double difference;
+    public double quotient;
+    public double product;
 
     public void Learning() {
        ReaversWordList();
-       SimpleMathAlgorithms();
     }
 
     public static double bayes(double p_a, double p_b, double p_b_a) {
@@ -49,41 +60,43 @@ public class Learning {
         }
     }
 
-    public void SimpleMathAlgorithms() {
-        if(action == "add") {
-            Add();
-        }
-        
-        if(action == "subtract") {
-            Sub();
-        }
-        
-        if(action == "divide") {
-            Divide();    
-        }
-        
-        if(action == "multiply") {
-            Multiplication();
-        }
+    public void Add() {
+        sum = x + y;
+
+        System.out.println(sum);
     }
 
-    public void Add() {
-        int x = numbers;
-        int y = numbers;
+    public double getSum() {
+        return sum;
     }
 
     public void Sub() {
-        int x = numbers;
-        int y = numbers;
+        difference = y - x;
+
+        System.out.println(difference);
     }
 
-    public void Divide() {
-        int x = numbers;
-        int y = numbers;
+    public double getDifference() {
+        return difference;
+    }
+
+    public void Divide() {        
+        quotient = y / x;
+
+        System.out.println(quotient);
+    }
+
+    public double getQuotient() {
+        return quotient;
     }
 
     public void Multiplication() {
-        int x = numbers;
-        int y = numbers;
+        product = x * y;
+
+        System.out.println(product);
+    }
+
+    public double getProduct() {
+        return product;
     }
 }

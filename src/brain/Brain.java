@@ -40,9 +40,18 @@ public class Brain {
 			learn.Learning();
 		}
 
-		if(input.equals("calculate")) {
-			learn.Learning();
-			System.out.println("What Algorithm should I use?");
+		if(input.equals("Add")) {
+			learn.Add();
+			System.out.println(learn.getSum());
+		} else if(input.equals("Subtract")) {
+			learn.Sub();
+			System.out.println(learn.getDifference());
+		} else if(input.equals("Divide")) {
+			learn.Divide();
+			System.out.println(learn.getQuotient());
+		} else if(input.equals("Multiply")) {
+			learn.Multiplication();
+			System.out.println(learn.getProduct());
 		}
 	}
 }
