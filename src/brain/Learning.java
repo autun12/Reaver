@@ -18,11 +18,14 @@ public class Learning {
     BufferedReader br;
     //String action = brain.input;
 
-    Scanner algorithm = new Scanner(System.in);
-    double numbers = algorithm.nextDouble();
+    Scanner firstNum = new Scanner(System.in);
+    Scanner secNum = new Scanner(System.in);
+    
+    double firstNumber = firstNum.nextDouble();
+    double secondNumber = secNum.nextDouble();
 
-    public double x = numbers;
-    public double y = numbers;
+    public double x = firstNumber;
+    public double y = secondNumber;
 
     public double sum;
     public double difference;
@@ -62,8 +65,6 @@ public class Learning {
 
     public void Add() {
         sum = x + y;
-
-        System.out.println(sum);
     }
 
     public double getSum() {
@@ -72,8 +73,6 @@ public class Learning {
 
     public void Sub() {
         difference = y - x;
-
-        System.out.println(difference);
     }
 
     public double getDifference() {
@@ -82,8 +81,6 @@ public class Learning {
 
     public void Divide() {        
         quotient = y / x;
-
-        System.out.println(quotient);
     }
 
     public double getQuotient() {
@@ -92,8 +89,6 @@ public class Learning {
 
     public void Multiplication() {
         product = x * y;
-
-        System.out.println(product);
     }
 
     public double getProduct() {
